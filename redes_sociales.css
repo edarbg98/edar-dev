@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a7c0ff, #fbc1ff);
+    font-family: 'Arial', sans-serif;
+    color: #2d2d44;
+}
+
+.page {
+    min-height: 100vh;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hero {
+    text-align: center;
+    max-width: 780px;
+}
+
+.breadcrumbs {
+    width: 100%;
+    max-width: 920px;
+}
+
+.card {
+    width: 100%;
+    max-width: 920px;
+    background: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(22, 18, 70, 0.12);
+    padding: 28px;
+    backdrop-filter: blur(16px);
+}
+
+.socials-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #3b3a5b;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+@media (min-width: 768px) {
+    .redes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-link {
+        width: auto;
+        margin: 0;
+    }
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+.whatsapp:hover {
+    color: #25d366;
+}
+
+.instagram:hover {
+    color: #c13584;
+}
+
+.btn-link,
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #3b3a5b;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-link:hover,
+.github-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    color: #ffffff;
+    text-shadow: 0 18px 40px rgba(94, 67, 179, 0.3);
+}
+
+h2 {
+    margin: 0;
+    color: #2d2d44;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    line-height: 1.8;
+    color: #2a2a43;
+}
+
+.more {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.more a {
+    text-decoration: none;
+}
+
